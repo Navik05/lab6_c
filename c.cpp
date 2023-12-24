@@ -15,20 +15,23 @@ int main()
     square one;
     circle two;
     triangle three;
+    figure fg;
+    figure *figure;
     setlocale(LC_ALL, "Rus");
     //Полный цикл программы
     do {
         f = 1; p = 0; s = 0;
+        figure = &one;
         printf("\n1-квадрат\n2-круг\n3-треугольник\nВыберите фигуру:");
         min = 1; max = 3;
-        one.setType(block_int(min, max));
+        figure->setType(block_int(min, max));
         //Ввод и обработка
-        switch (one.getType())
+        switch (figure->getType())
         {
         case 1:
             printf("Длина стороны квадрата:");
             one = square(block_double());
-            one.workSquare();
+            figure->Area();
             break;
         case 2:
             printf("Радиус круга:");
@@ -55,21 +58,23 @@ int main()
         default:;
         }
         //Вывод результатов
+        fg = one;
+        figure = &fg;
         if (f == 1)
         {
             printf("Фигура: ");
-            switch (one.getType())
+            switch (figure->getType())
             {
             case 1:
                 printf("квадрат");
                 printf("\nДиагональ: %f", one.getDiagonal());
-                s = one.getArea();
-                p = one.getPerimeter();
+                s = figure->Area();
+                p = figure->getPerimeter();
                 break;
             case 2:
                 printf("круг");
                 printf("\nДиаметр: %f", two.getD());
-                s = two.getArea();
+                s = two.Area();
                 p = two.getPerimeter();
                 break;
             case 3:
@@ -87,7 +92,7 @@ int main()
                 default:;
                 }
                 printf(" треугольник");
-                s = three.getArea();
+                s = three.Area();
                 p = three.getPerimeter();
                 break;
             default:;

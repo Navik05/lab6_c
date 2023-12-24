@@ -1,7 +1,7 @@
 #include "figure.h"
 
 //Вывод площади
-double figure::getArea()
+double figure::Area()
 {
     return area;
 }

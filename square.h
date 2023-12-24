@@ -8,6 +8,6 @@ class square : public figure
 public:
     square();
     square(double a);
-    void workSquare();
+    double Area() override;
     double getDiagonal();
 };

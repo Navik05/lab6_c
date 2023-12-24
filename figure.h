@@ -9,7 +9,7 @@ protected:
     double perimeter;
     static int type;
 public:
-    double getArea();
+    virtual double Area();
     double getPerimeter();
     static void setType(int e);
     static int getType();
