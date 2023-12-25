@@ -11,11 +11,6 @@ square::square(double a)
     diagonal = 0;
 }
 
-double square::getPerimeter() const
-{
-    return perimeter;
-}
-
 //Обработка данных
 void square::workSquare()
 {

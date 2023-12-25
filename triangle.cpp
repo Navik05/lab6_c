@@ -13,11 +13,6 @@ triangle::triangle(double sides[])
 		this->sides[i] = sides[i];
 }
 
-double triangle::getPerimeter() const
-{
-    return perimeter;
-}
-
 //Обработка данных
 void triangle::workTriangle()
 {

@@ -13,7 +13,7 @@ int main()
     int min, max, i, f;
     double sides[N], p, s;
     square one;
-    circle two;
+    circle<double> two;
     triangle three;
     setlocale(LC_ALL, "Rus");
     //Полный цикл программы
@@ -32,7 +32,7 @@ int main()
             break;
         case 2:
             printf("Радиус круга:");
-            two = circle(block_double());
+            two = circle<double>(block_double());
             two.workCircle();
             break;
         case 3:

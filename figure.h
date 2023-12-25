@@ -10,7 +10,7 @@ protected:
     static int type;
 public:
     double Area();
-    virtual double getPerimeter() const = 0;
+    double getPerimeter();
     static void setType(int e);
     static int getType();
     figure();

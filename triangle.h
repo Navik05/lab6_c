@@ -8,6 +8,5 @@ class triangle : public figure
 public:
     triangle();
     triangle(double sides[]);
-    virtual double getPerimeter() const override;
     void workTriangle();
 };
