@@ -11,6 +11,11 @@ circle::circle(double r)
     d = 0;
 }
 
+double circle::getPerimeter() const
+{
+    return perimeter;
+}
+
 //Обработка данных
 void circle::workCircle()
 {

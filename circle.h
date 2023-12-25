@@ -8,6 +8,7 @@ class circle : public figure
 public:
     circle();
     circle(double r);
+    virtual double getPerimeter() const override;
     void workCircle();
     double getD();
 };

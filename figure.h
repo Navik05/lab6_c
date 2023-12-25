@@ -9,8 +9,8 @@ protected:
     double perimeter;
     static int type;
 public:
-    virtual double Area();
-    double getPerimeter();
+    double Area();
+    virtual double getPerimeter() const = 0;
     static void setType(int e);
     static int getType();
     figure();

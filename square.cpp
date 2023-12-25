@@ -9,16 +9,19 @@ square::square(double a)
 {
     this->a = a;
     diagonal = 0;
-    figure();
+}
+
+double square::getPerimeter() const
+{
+    return perimeter;
 }
 
 //Обработка данных
-double square::Area()
+void square::workSquare()
 {
     diagonal = sqrt(2) * a;
     area = pow(a, 2);
     perimeter = a * 4;
-    return 0;
 }
 
 //Вывод диагонали

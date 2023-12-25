@@ -8,6 +8,7 @@ class square : public figure
 public:
     square();
     square(double a);
-    double Area() override;
+    virtual double getPerimeter() const override;
+    void workSquare();
     double getDiagonal();
 };

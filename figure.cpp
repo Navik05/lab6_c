@@ -6,12 +6,6 @@ double figure::Area()
     return area;
 }
 
-//Вывод периметра
-double figure::getPerimeter()
-{
-    return perimeter;
-}
-
 //Ввод типа фигуры
 void figure::setType(int e)
 {
